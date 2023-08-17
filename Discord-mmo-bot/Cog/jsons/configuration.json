@@ -1,0 +1,23 @@
+{
+    "OwnerID" : 748145909031764040,
+    "Log Channel": 855142178787033098,
+    "Bot Online Channel": 855142178565128208,
+    "Guild" : 855142178158673920,
+    "Token" : "OTgwOTMxMDkwNzIwMTAwNDYy.GNKIK6.zgqlT0oq94k_MNMuofVhxQnpbQufpTh-K2P2Pc",
+    "Reset Rp Point Day": 7,
+    "Default Start Location" : 855142182460588041,
+    "Money to Create Lonca": 30000,
+    "Warning Role" : 855142178396176450,
+    "SignRole": 981202732516012102,
+    "NotSignRole": 981203151736701010,
+    "Rp Giveaway": 2000,
+    "SizeOFloncaname": 20,
+    "Edge":10,
+    "Classes": ["Barbarian","Wizard","Fighter","Ranger"],
+    "npc location": 855142182695338051,
+    "Total Selected Item" : 10,
+    "need level to travel": 10,
+    "Starvation Decrease": 10,
+    "Database Name":"mongodb+srv://Turcan:Toprak46.@aden.rtb74.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "MongoDb Token": "Aden_Bot_Database"
+}

@@ -1,0 +1,17 @@
+{
+    "halfBloodSeller": {
+        "name" : "Jhon",
+        "rpsensentenceSuccess": ["Hmmm bu alısverise bayıldım","Guzel silah, bir dahaki sefere gorusuruz",
+            "Bu iteme bu kadar gold fazla gibi ama sana guvendim","tamamdır aldım. Byee! dikkat et, olme."
+        ],
+        "rpsentencenotSucsess": ["Bende kanacak goz var mı sence? Bununla 1 tane demon kesemezsin sen!", "beni mi dolandırıyorsun sen ha?",
+        "senin gibi kac kisi bu itemi bu golda satmaya çalıstı... Yemezler", "Başka kapıya..."],
+        
+        "intelligence" : 17
+    
+    },
+    "mysteriousSeller": {
+        "name": "Yakup"
+    }
+
+}

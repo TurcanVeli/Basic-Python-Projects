@@ -1,0 +1,162 @@
+{
+    "Class":
+    {
+        "Barbarian" : {
+            "Yıkıcı Saldırı": {"Skill Türü" : "Aktif","Bekleme Süresi" : 5,"Levels" : [1,2,3,4,5], "Reduced AC" : "1d6", "kullanım süresi" : "1d3"},
+            "Kan Çalan": {"Açıklama": "Kritik vurdukça çalışır","Skill Türü" : "Pasif", "Bekleme Süresi": 0, "Levels": [6,7,8,9,10], "Reduced Hp" : "2d10+5", "kullanım süresi":0},
+            "İç Güdüsel Saldırı": {"Açıklama" :"Düşman başarısız saldırı yaparsa acye bakmadan vurursun", "Skill Türü" :"Pasif",
+                "Bekleme Süresi" : 5,"Levels" : [11,12,13,14,15], "Damage" : "%50","kullanım süresi" : 0},
+            "Amansız Öfke" : {"Açıklama" : "Krit vurdukça tekrar vuruyor karşı taraf saldıramıyor", "Skill Türü": "Pasif",
+                "Levels" : [16,17,18,19,20],"Bekleme Süresi": 0}
+
+            
+        },
+        "Wizard" : {
+            "Şimşek": {"Açıklama" : "skill seviyesi artçıkta 8+int+skill seviyesi artar con zar save zar attırıyor. 1d20 + mod(con) 13ü geçerse kurtulur geçemezse bir sonraki zar dezavantajlı 2d20 common roll en küçük kullanılır",
+                        "Skill Türü" : "Aktif","Bekleme Süresi" : 5, "Levels" : [1,2,3,4,5]},
+            "Ruh Sömürme": {"Açıklama":"Kendini iyileştirdiğinin yarısı kadar rakipten çalar. levelde bs düşer", "Skill Türü":"Aktif","Bekleme Süresi":8,
+                        "levels" : [6,7,8,9,10],"İyileşme Miktarı": "karakter leveli*1d4 + mod(int)"},
+            "Yansıma Saldırısı": {"'Açıklama" : "kendisine gelen kritik hasarın yarısını rakibine yansıtır","Skill Türü":"Pasif", "Bekleme Süresi" :10, "levels": [11,12,13,14,15]},
+            "Sersemlet": {"Açıklama" : "d20 + int = 8 + int + (skill seviyesi*2) int save atılır tutturamayanlar 5d12 hasar yer 1d10 sersemler, tutturanlar hasarın yarısını alır ve 1d5 sersemler","Skill Türü":"Aktif","Bekleme Süresi":10, "Levels" : [16,17,18,19]}
+
+
+        },
+        "Fighter" : {
+            "Zayıflat": {"Açıklama":"rakibe vurduğund rakibin ilk tur saldırsı dezavantajlı, bs  1 tur düşer","Skill Türü":"Pasif" ,"Bekleme Süresi":8,"Levels": [1,2,3,4,5]},
+            "Savuştur" : {"Açıklama": "Rakibin saldırısını savuşturmak için d20 atar 15 üzeri atması lazım 15 azalrı ","Skill Türü" : "Pasif","Bekleme Süresi": 5 ,"Levels": [6,7,8,9,10]},
+            "Savun": {"Açıklama": "Rakibe vurduktan sonra +5 alır, skill seviyesi kadar tur boyunca","Skill Türü" :"Pasif" ,"Bekleme Süresi": 10,"Levels": [11,12,13,14,15]},
+            "Taktik Deha" : {"Açıklama": "Rakibe avantajlı bir şekilde 2 defa saldırır","Skill Türü" : "Pasif","Bekleme Süresi": 5 ,"Levels": [16,17,18,19,20]}
+
+        },
+        "Ranger" : {
+            "Körelt" : {"Açıklama": "Rakibe yapılan başarılı saldırının sonunda rakip dex save atıyor 8+dex+skill seviyesini geçmesi lazım. geçemezse 1 turluğuna kör Dezavantajlı saldırı oyuncu avantajlı saldırıyor","Skill Türü" :"Pasif" ,"Bekleme Süresi":6 ,"Levels": [1,2,3,4,5]},
+            "Dodge" : {"Açıklama": "Rakibe vurduktan sonra rakip saldıramıyor 1 tur","Skill Türü" : "Pasif","Bekleme Süresi": 8 ,"Levels":[6,7,8,9,10]},
+            "Kanama" : {"Açıklama": "Rakip dex save atar 8+dex+(skill seviyesi*2) geçemezse 1d6 tur boyun maxhp %5 gider, %1 artar skill seviyesine göre","Skill Türü" : "Aktif","Bekleme Süresi": 10 ,"Levels": [11,12,13,14,15]},
+            "Avcı" : {"Açıklama": "kritik 3 kalsın", "Skill Türü" :"pasif" ,"Bekleme Süresi" : 0 ,"Levels": [16,17,18,19,20]}
+        }  
+    },
+    "SkillsLevels": {
+        "Barbarian": {
+            "1" :"Yıkıcı Saldırı",
+            "6" :"Kan Çalan",
+            "11":"İç Güdüsel Saldırı",
+            "16": "Amansız Öfke"
+        },
+        "Wizard":{
+            "1": "Şimşek",
+            "6": "Ruh Sömürme",
+            "11":"Yansıma Saldırısı",
+            "16":"Sersemlet"
+        },
+        "Fighter":{ 
+            "1":"Zayıflat",
+            "6":"Savuştur",
+            "11":"Savun",
+            "16":"Taktik Deha"
+        },
+        "Ranger": {
+            "1": "Körelt",
+            "6":"Dodge",
+            "11":"kanama",
+            "16":"Avcı"
+
+        }
+    },
+    "proficiency": {
+        "1" : 0,
+        "2": 2,
+        "3": 2,
+        "4": 2,
+        "5": 3,
+        "6": 3,
+        "7": 3,
+        "8": 3,
+        "9": 4,
+        "10": 4,
+        "11": 4,
+        "12": 4,
+        "13": 5,
+        "14": 5,
+        "15": 6,
+        "16": 6,
+        "17": 6,
+        "18": 7,
+        "19": 7,
+        "20": 7
+
+
+    },
+    
+    "PvpGoldLose" : 
+    {
+        
+        "4": {"2" : 25, "3" :30},
+        "5": {"2" : 35, "3" :40},
+        "6": {"2" : 40, "3" :50},
+        "7": {"2" : 45, "3" :60},
+        "8": {"2" : 45, "3" :70},
+        "9": {"2" : 45, "3" :70},
+        "10": {"2" : 45, "3" :70},
+        "11": {"2" : 49, "3" : 84},
+
+        "12": {"2" : 52, "3" :88},
+        "13": {"2" : 55, "3" :92},
+        "14": {"2" : 58, "3" :96},
+        "15": {"2" : 61, "3" :100},
+        "16": {"2" : 64, "3" :100},
+        "17": {"2" : 67, "3" :100},
+        "18": {"2" : 70, "3" :100},
+        "19": {"2" : 70, "3" :100},
+        "20": {"2" : 70, "3" :100}
+    },
+
+
+    "Statpoint":  {
+        "1" : 0,
+        "2" : 0,
+        "3" : 1,
+        "4" : 1,
+        "5" : 2,
+        "6" : 2,
+        "7" : 3,
+        "8" : 3,
+        "9" : 3,
+        "10": 3,
+        "11": 5,
+        "12": 6,
+        "13": 7,
+        "14": 7,
+        "15": 7,
+        "16": 8,
+        "17": 8,
+        "18": 8,
+        "19": 8,
+        "20": 8
+    },
+   
+    
+    
+    
+    "Levels":  {
+        "1" : 0,
+        "2" : 300,
+        "3" : 900,
+        "4" : 3700,
+        "5" : 7500,
+        "6" : 17000,
+        "7" : 28000,
+        "8" : 38000,
+        "9" : 55000,
+        "10": 75000,
+        "11": 100000,
+        "12": 150000,
+        "13": 200000,
+        "14": 300000,
+        "15": 405000,
+        "16": 605000,
+        "17": 705000,
+        "18": 810000,
+        "19": 905000,
+        "20": 1055000
+    }
+}
