@@ -1,0 +1,1 @@
+I had need to translate all words in a website. That was customer want. I wrote this script to translate. Many hours saved.
